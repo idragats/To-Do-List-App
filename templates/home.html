@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="/styles/home.css">
+    <script type="module" src="/apps/listApp.js"></script>
+</head>
+<body>
+
+    <div class="square">
+        <div class="container">
+              
+                <div class="content">
+                    <h1 class="main-title">To-Do List App</h1> 
+                    <p class="paragraph">Stay Organized, Stay Ahead</p>
+                </div>    
+
+
+                <div class="relative-inputs">
+
+                    <div class="input-place">
+                        <p>Task</p>
+                        <input class="input-field" type="text" name="task" id="task" placeholder="task">
+                    </div>
+
+
+                    <div class="input-place">
+                        <p>Category</p>
+                        <input class="input-field" type="text" name="category" id="category" placeholder="category">
+                    </div>
+
+                    <div class="input-place">
+                        <p>Date</p>
+                        <input class="input-field" type="text" name="date" id="date" placeholder="dd/mm/yyy" onfocus="this.type='date'" onblur="this.type='text'">
+                    </div>   
+
+                    <div class="input-place">
+                        <p>Time</p>
+                        <input class="input-field" type="text" name="time" id="time" placeholder="hh:mm" onfocus="this.type='time'" onblur="this.type='text'">
+                    </div>
+
+                </div>
+
+                <button type="submit" id="btn-add" class="btn-add">+ Add New Task</button> 
+
+                <div class="counter">
+                    <p>Incomplete Tasks: <span id="counter">0 </span></p>
+                </div>
+
+                    <button type="submit" id="btn-sort-by-date-time" class="btn-sort-date">by Date and Time </button> 
+                    <button type="submit" id="btn-sort-category" class="btn-sort-category">by Category</button>    
+
+                <div class="list">
+                    <ul id="list-items"> </ul>
+                </div> 
+
+                
+            
+            <button type="submit" onclick="window.location.href='/templates/signIn.html'"  class="btn-sign-out">Sign out</button>
+            
+        </div>   
+
+    </div>
+
+    
+</body>
+</html>

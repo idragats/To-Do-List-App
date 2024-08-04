@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+}
+
+/* set app at the center of page */
+ .square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    border-radius: 50px;
+    gap: 50px;
+   
+
+}
+
+.btn-sign-up-successfully{ 
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #3ABB34;
+    color: white;
+    font-weight: 600;
+    margin: 20px 0;
+    font-size: 1rem;
+    
+    
+}
+
+.btn-sign-up-successfully:hover{
+    background-color: #35A830;
+}
+    
+img{
+    width: 500px;
+    height: auto;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

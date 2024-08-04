@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    padding: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #666;
+}
+
+.relative-inputs {
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-place {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field {
+    width: 140%;
+    height: 35px;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    padding: 0 .4rem;
+    border: none;
+    outline: none;
+}
+
+.btn-add {
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #3ABB34;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #35A830;
+}
+
+.list {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: calc(58% - 40px);
+    max-height: 300px;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list ul li {
+    font-size: 15px;
+    padding: 16px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.list ul li:hover {
+    background-color: #e1e1e1;
+}
+
+.list ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(/images/circle-solid.svg);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list ul li.checked {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.list ul li.checked::before {
+    background-image: url(/images/circle-check-solid.svg);
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.task-item span {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.delete{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.delete {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/images/trash-solid.svg);
+}
+
+.edit {
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/images/pen-to-square-regular.svg);
+}
+
+.btn-sort-date, .btn-sort-category, .btn-sign-out{
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #3ABB34;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-sort-date:hover, .btn-sort-category:hover, .btn-sign-out:hover {
+    background-color: #35A830;
+}
+
+.btn-sort-date{ 
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.btn-sort-category {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+}
+
+.btn-sort-category {
+    margin-left: 180px;
+}
+
+.btn-sign-out {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.counter{
+    width: 210px;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 30px;
+    background: #3ABB34;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 500px;
+    margin-top: 10px;
+}
